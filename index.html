@@ -1,0 +1,220 @@
+<title>Trakord プライバシーポリシー</title>
+<style>
+  :root{
+    --bg:#F7F5F0;
+    --panel:#FFFFFF;
+    --ink:#1B1C17;
+    --ink-soft:#55564C;
+    --line:#E4E1D6;
+    --amber:#D9720C;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#121310;
+      --panel:#1A1C16;
+      --ink:#EDEEE6;
+      --ink-soft:#B7B8AC;
+      --line:#33352A;
+      --amber:#FF9518;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#121310;
+    --panel:#1A1C16;
+    --ink:#EDEEE6;
+    --ink-soft:#B7B8AC;
+    --line:#33352A;
+    --amber:#FF9518;
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'BIZ UDPGothic', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    line-height:1.8;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:56px 20px 96px;
+  }
+  header{
+    margin-bottom:40px;
+    padding-bottom:28px;
+    border-bottom:2px solid var(--amber);
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    letter-spacing:0.05em;
+    color:var(--amber);
+    font-weight:700;
+    margin-bottom:12px;
+  }
+  .eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--amber); }
+  h1{
+    font-size:28px;
+    margin:0 0 8px;
+    letter-spacing:0.02em;
+  }
+  .updated{
+    color:var(--ink-soft);
+    font-size:14px;
+  }
+  h2{
+    font-size:18px;
+    margin:44px 0 14px;
+    padding-left:12px;
+    border-left:4px solid var(--amber);
+  }
+  p{
+    margin:0 0 14px;
+    font-size:15.5px;
+    color:var(--ink);
+  }
+  ul{
+    margin:0 0 14px;
+    padding-left:1.3em;
+  }
+  li{
+    margin-bottom:8px;
+    font-size:15.5px;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:16px 0 24px;
+    font-size:14.5px;
+  }
+  th, td{
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+  }
+  th{
+    color:var(--ink-soft);
+    font-weight:700;
+    width:34%;
+  }
+  .card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:20px 22px;
+    margin:0 0 16px;
+  }
+  .badge{
+    display:inline-block;
+    font-size:12.5px;
+    font-weight:700;
+    color:var(--amber);
+    background:color-mix(in srgb, var(--amber) 14%, transparent);
+    border-radius:5px;
+    padding:2px 8px;
+    margin-bottom:8px;
+  }
+  .contact{
+    margin-top:52px;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  a{ color:var(--amber); }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow"><span class="dot"></span>PRIVACY POLICY</div>
+    <h1>Trakord(トラコード) プライバシーポリシー</h1>
+    <div class="updated">最終更新日: 2026年9月18日</div>
+  </header>
+
+  <p>
+    Trakord(トラコード)は、トラック運転手向けの運行記録・原価管理アプリです。
+    このページでは、本アプリが取得する情報の内容と使用目的、外部への送信の有無について説明します。
+  </p>
+
+  <h2>1. アプリが扱う情報</h2>
+  <div class="card">
+    <span class="badge">位置情報</span>
+    <p style="margin-bottom:0">
+      走行中の速度表示、天気の取得、住所/施設名の候補検索、坂道判定のために端末のGPSを使用します。
+      記録として保存されるのは「地名(住所/施設名)のテキスト」のみで、緯度経度そのものは、
+      設定画面で取引先(会社)情報に「現在地の座標」を任意で登録した場合にのみ端末内に保存されます。
+    </p>
+  </div>
+  <div class="card">
+    <span class="badge">カメラ / 写真</span>
+    <p style="margin-bottom:0">
+      走行距離メーターやレシートを撮影し、数字を読み取る(OCR)ために使用します。
+      この処理はすべて端末内で行われ(Google ML Kit、オンデバイス処理)、撮影した画像や読み取り結果が
+      外部のサーバーに送信されることはありません。
+    </p>
+  </div>
+  <div class="card">
+    <span class="badge">記録データ</span>
+    <p style="margin-bottom:0">
+      走行距離・給油量・休憩時間・取引先情報などの記録は、すべて端末内のデータベースにのみ保存されます。
+      Trakordはアカウント登録やログインを必要とせず、記録データをクラウドや外部サーバーに
+      自動で送信・同期することはありません。
+    </p>
+  </div>
+
+  <h2>2. 外部サービスへの送信</h2>
+  <p>Trakordは以下の外部サービスにのみ、必要最小限の情報を送信します。広告配信・利用状況解析(アナリティクス)のための外部送信は一切行いません。</p>
+  <table>
+    <tr><th>サービス</th><td>用途</td></tr>
+    <tr><td>OpenStreetMap Nominatim</td><td>住所/施設名の検索・逆ジオコーディング(緯度経度または検索文字列を送信)</td></tr>
+    <tr><td>Open-Meteo</td><td>現在地の天気情報の取得(緯度経度を送信)</td></tr>
+  </table>
+  <p>
+    いずれもAPIキー・アカウント登録が不要な公開サービスであり、Trakord側でユーザーを識別できる情報(氏名・メールアドレス等)を付加して送信することはありません。
+  </p>
+
+  <h2>3. データの保存場所とバックアップ</h2>
+  <p>
+    すべての記録は端末内のローカルデータベースにのみ保存されます。設定画面から、記録をCSVファイル、
+    またはバックアップファイル(データベースそのもの)として書き出すことができますが、この操作はユーザーが
+    明示的に「書き出す」を選んだ場合にのみ行われ、書き出し先はOS標準の共有シート(AirDrop・メール・ファイル保存など)を通じてユーザー自身が選択します。Trakordの提供者が自動的にこれらのデータを収集することはありません。
+  </p>
+
+  <h2>4. 通知</h2>
+  <p>
+    休憩終了・430(連続運転4時間)の目安通知は、すべて端末内で処理される「ローカル通知」です。
+    通知のために外部のプッシュ通知サーバーを利用することはありません。
+  </p>
+
+  <h2>5. データの削除</h2>
+  <p>
+    設定画面の「データ管理」からすべての記録を削除できます。また、アプリをアンインストールすると、
+    端末内に保存されていたすべてのデータ(記録・設定・取引先情報など)が削除されます。
+  </p>
+
+  <h2>6. 広告・第三者への提供</h2>
+  <p>
+    Trakordは広告を表示しません。収集した情報を第三者に販売・提供することもありません。
+  </p>
+
+  <h2>7. お子様のプライバシー</h2>
+  <p>
+    Trakordはトラック運転手向けの業務用アプリであり、13歳未満のお子様を対象としていません。
+  </p>
+
+  <h2>8. このポリシーの変更</h2>
+  <p>
+    アプリの機能追加・変更に伴い、本ポリシーの内容を更新することがあります。重要な変更がある場合は、
+    このページの「最終更新日」を更新してお知らせします。
+  </p>
+
+  <div class="contact">
+    <strong>お問い合わせ</strong><br>
+    本ポリシーに関するご質問は、以下までご連絡ください。<br>
+    handyk0221@gmail.com
+  </div>
+</div>
