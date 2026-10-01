@@ -1,0 +1,173 @@
+<title>Trakord サポート</title>
+<style>
+  :root{
+    --bg:#F7F5F0;
+    --panel:#FFFFFF;
+    --ink:#1B1C17;
+    --ink-soft:#55564C;
+    --line:#E4E1D6;
+    --amber:#D9720C;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#121310;
+      --panel:#1A1C16;
+      --ink:#EDEEE6;
+      --ink-soft:#B7B8AC;
+      --line:#33352A;
+      --amber:#FF9518;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#121310;
+    --panel:#1A1C16;
+    --ink:#EDEEE6;
+    --ink-soft:#B7B8AC;
+    --line:#33352A;
+    --amber:#FF9518;
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'BIZ UDPGothic', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    line-height:1.8;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:56px 20px 96px;
+  }
+  header{
+    margin-bottom:40px;
+    padding-bottom:28px;
+    border-bottom:2px solid var(--amber);
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    letter-spacing:0.05em;
+    color:var(--amber);
+    font-weight:700;
+    margin-bottom:12px;
+  }
+  .eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--amber); }
+  h1{
+    font-size:28px;
+    margin:0 0 8px;
+    letter-spacing:0.02em;
+  }
+  .updated{
+    color:var(--ink-soft);
+    font-size:14px;
+  }
+  h2{
+    font-size:18px;
+    margin:44px 0 14px;
+    padding-left:12px;
+    border-left:4px solid var(--amber);
+  }
+  p{
+    margin:0 0 14px;
+    font-size:15.5px;
+    color:var(--ink);
+  }
+  ul{
+    margin:0 0 14px;
+    padding-left:1.3em;
+  }
+  li{
+    margin-bottom:8px;
+    font-size:15.5px;
+  }
+  .card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:20px 22px;
+    margin:0 0 16px;
+  }
+  .contact{
+    margin-top:52px;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  a{ color:var(--amber); }
+  .crosslink{
+    font-size:13.5px;
+  }
+  .faq h3{
+    font-size:16px;
+    margin:0 0 8px;
+  }
+  .mail{
+    display:inline-block;
+    margin-top:6px;
+    font-size:17px;
+    font-weight:700;
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow"><span class="dot"></span>SUPPORT</div>
+    <h1>Trakord(トラコード) サポート</h1>
+    <div class="updated">最終更新日: 2026年10月1日</div>
+    <div class="crosslink"><a href="./index.html">プライバシーポリシー</a> ・ <a href="./terms.html">利用規約</a></div>
+  </header>
+
+  <p>
+    Trakordは、トラック運転手のための運転日誌アプリです。ご質問・不具合のご報告・ご要望は、下記のメールアドレスまでお気軽にご連絡ください。
+  </p>
+
+  <div class="card">
+    <strong>お問い合わせ先</strong><br>
+    <a class="mail" href="mailto:rec-info@ak-square.studio">rec-info@ak-square.studio</a>
+    <p style="margin:10px 0 0;font-size:14px;color:var(--ink-soft)">
+      不具合のご報告の際は、お使いの機種・OSのバージョン・起きた操作をお書き添えいただけると助かります。返信まで数日いただく場合があります。
+    </p>
+  </div>
+
+  <h2>よくあるご質問</h2>
+
+  <div class="card faq">
+    <h3>アカウント登録は必要ですか?</h3>
+    <p style="margin-bottom:0">不要です。記録はすべてお使いの端末の中に保存され、開発者のサーバーには送られません。</p>
+  </div>
+
+  <div class="card faq">
+    <h3>機種変更のとき、記録を引き継げますか?</h3>
+    <p style="margin-bottom:0">設定画面からバックアップファイルを書き出し、新しい端末で読み込むと引き継げます。端末の故障や紛失に備えて、定期的なバックアップをおすすめします。</p>
+  </div>
+
+  <div class="card faq">
+    <h3>位置情報は何に使っていますか?</h3>
+    <p style="margin-bottom:0">アプリを開いている間の速度メーター、その日の走行軌跡、荷役・休憩の自動終了、記録場所の地名と天気の表示に使います。アプリを閉じている間は位置情報を使いません。</p>
+  </div>
+
+  <div class="card faq">
+    <h3>荷役や休憩が自動で終わらないことがあります</h3>
+    <p style="margin-bottom:0">自動終了は、アプリを開いた状態で走り出したときに判定します。アプリを閉じていた場合は、次にアプリを開いたときに判定します。終わっていないときは、ボタンから手動で終了してください。</p>
+  </div>
+
+  <div class="card faq">
+    <h3>ODOメーターの写真がうまく読み取れません</h3>
+    <p style="margin-bottom:0">数字の部分が画面の中央に大きく写るように撮ると読み取りやすくなります。読み取れない場合は、声での入力や手入力もご利用いただけます。</p>
+  </div>
+
+  <div class="card faq">
+    <h3>記録の数値は公式な記録として使えますか?</h3>
+    <p style="margin-bottom:0">本アプリの数値はGPSや入力内容にもとづく参考値です。運行管理などの公式な用途には、会社のデジタコ等の記録をご利用ください。</p>
+  </div>
+
+  <div class="contact">
+    提供: 個人開発者<br>
+    <a href="mailto:rec-info@ak-square.studio">rec-info@ak-square.studio</a>
+  </div>
+</div>
